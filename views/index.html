@@ -7,11 +7,15 @@
 		<link rel="stylesheet" href="/public/style.css">
 	</head>
 	<body>
+		<script>
+			function myfunction(){
+				conole.log("Hello World");
+			}
+		</script>
 		<h1>Hello, HTML.</h1>
 		<p>Do not use until Challenge #12</p>
-     <form action="/name" method="post">
+     <form action="/name" method="post" onSubmit="myfunction()">
       <label>Your Name: <input type="text"></label>
-      <input type="text" name="last" value="Doe"><br><br>
       <input type="submit" value="Submit">
     </form> 
 	</body>
